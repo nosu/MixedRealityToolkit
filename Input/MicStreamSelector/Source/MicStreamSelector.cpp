@@ -376,9 +376,10 @@ extern "C"
             if (outcapacityInBytes)
             {
                 buffer[i] = outdataInFloat[indexInFrame];
-                ++indexInFrame;
-                --dataInBuffer;
             }
+			
+            ++indexInFrame;
+            --dataInBuffer;
         }
         return 0;
     }
